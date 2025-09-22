@@ -22,3 +22,17 @@
 - **커밋 해시:** 1b47b77
 - **푸시 브랜치:** main
 - **원격 저장소:** https://github.com/dreamwars99/web_cicd_test2.git
+
+## 작업 요약 (2025년 9월 22일 월요일 05:00 KST) - TASK-1234
+
+### 작업 내용:
+현재 수정사항을 커밋하고 푸시했습니다. KB_FinAIssist/settings.py 파일이 업데이트되었고, README2.md에 관련 작업 로그가 추가되었습니다.
+
+### 커밋 및 푸시 정보:
+- **커밋 해시:** 3f360b2
+- **푸시 브랜치:** main
+- **원격 저장소:** https://github.com/dreamwars99/web_cicd_test2.git
+
+
+- EC2에 mysql을 설치해야함(amazon linux 2023)
+- `mysql -h {RDS 엔드포인트 url 주소} -u {마스터사용자 계정} -p` => 비밀번호 입력
