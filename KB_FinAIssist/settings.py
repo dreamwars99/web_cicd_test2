@@ -30,6 +30,11 @@ SECRET_KEY = "django-insecure-p2)a92tangx7n%9=wzr$cbi9_5u5nr#*s-v+l-%fjofp+c$+as
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# Cross-Origin-Opener-Policy (COOP) 설정
+# 개발 환경(DEBUG=True)에서 브라우저의 COOP 관련 경고 메시지(untrustworthy origin)를 해결하기 위해
+# SecurityMiddleware가 해당 헤더를 추가하지 않도록 설정합니다.
+SECURE_CROSS_ORIGIN_OPENER_POLICY = None
+
 # ALLOWED_HOSTS = ['.elasticbeanstalk.com']
 ALLOWED_HOSTS = [
   "finaissistweb-env.eba-idpf34w6.ap-northeast-2.elasticbeanstalk.com",
@@ -66,7 +71,6 @@ MIDDLEWARE = [
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
-    "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
